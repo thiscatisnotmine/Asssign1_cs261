@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="logo">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMrPe4c7zH8WZm7BSp7PAPkseJgon_MGYnEw&s" alt="Thammasat University"> <!-- ใส่ URL รูปภาพที่นี่ -->
+        </div>
+        <h2>Login</h2>
+        <form id="loginForm">
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" placeholder="Enter your email." required>
+            </div>
+            
+            <div id="emailError"></div>
+            <br>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <div class="password-container">
+                    <input type="password" id="password" name="password" placeholder="Enter your password." required>
+                   <span class="toggle-password" id="togglePassword">
+                        <i class="fas fa-eye"></i>
+                    </span>
+                </div>
+            </div>
+            <br>
+            <div class="form-group">
+                <select id="role" name="role" required>
+                    <option value="" disabled selected>Select Role</option>
+                    <option value="Student">Student</option>
+                    <option value="Lecturer">Lecturer</option>
+                </select>
+            </div>
+
+            <button type="button" id="loginButton" onclick="go()" disabled>Login</button>
+        
+            
+        </form>
+        <p id="space1"></p>
+        <p id="space2"></p>
+        <p id="space3"></p>
+    </div>
+    
+    
+    
+
+    <script src="script.js"></script>
+</body>
+</html>

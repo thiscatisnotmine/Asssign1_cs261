@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: gainsboro;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.login-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    height: 60vh;
+    display: flex; /* ใช้ flexbox */
+    flex-direction: column; /* จัดแนวในแนวตั้ง */
+    justify-content: center; /* จัดกึ่งกลางในแนวตั้ง */
+    align-items: center;
+   
+}
+
+.logo {
+    width: 157px; /* ขนาดของวงกลม */
+    height: 157px; /* ขนาดของวงกลม */
+    border-radius: 50%; /* ทำให้เป็นวงกลม */
+    overflow: hidden; /* ซ่อนส่วนที่เกิน */
+    /*margin-bottom: 1%;  ระยะห่างด้านล่าง */
+    margin-top: -35%;
+}
+
+.logo img {
+    width: 100%; /* ทำให้รูปภาพเต็มวงกลม */
+    height: auto; /* เก็บสัดส่วนของรูปภาพ */
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+label {
+    width: 100px; /* กำหนดขนาด label ให้คงที่ */
+    text-align: left;
+    margin-right: 2%; /* ระยะห่างระหว่าง label และ input */
+}
+
+input, select {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.password-container {
+    position: relative;
+    display: flex;
+    flex: 1;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.toggle-password i {
+    opacity: 0.5; /* ไอคอนจางลง 50% */
+    color: #999; /* สีเทาจาง */
+    transition: opacity 0.3s ease; /* เพิ่มการเปลี่ยนแปลงลื่นไหลเมื่อทำการ hover */
+}
+
+.toggle-password i:hover {
+    opacity: 1; /* ทำให้ไอคอนชัดเจนขึ้นเมื่อผู้ใช้ hover */
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.login-container p {
+    font-size: small;
+    margin: 2%;
+    padding: 0%;
+}
+
+#emailError {
+    color: red;
+    font-size: small;
+}
+
