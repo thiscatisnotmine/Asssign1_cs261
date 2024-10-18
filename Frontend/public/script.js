@@ -45,9 +45,7 @@
         .then(json =>{
             console.log(json);
             document.getElementById("space1").innerText = json.displayname_en;
-            document.getElementById("space2").innerText = json.username;
-            document.getElementById("space3").innerText = json.type;
-   
+            
         });
     }
 
